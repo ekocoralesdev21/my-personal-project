@@ -21,7 +21,7 @@ A modern and fully responsive Admin Dashboard built with the latest **Tailwind C
 
 | Desktop View | Mobile View |
 | :--- | :--- |
-| ![Desktop](https://via.placeholder.com/400x250?text=Desktop+Layout) | ![Mobile](https://via.placeholder.com/150x250?text=Mobile+Layout) |
+| ![Desktop](./preview%20img/) | ![Mobile](https://via.placeholder.com/150x250?text=Mobile+Layout) |
 
 ## 🚀 How to Run the Project
 

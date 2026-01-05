@@ -4,8 +4,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <div class="bg-red">dfefd</div>
+<body class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-blue-600 p-4 md:p-8 gap-0">
+
+  <header class="bg-white border-b-2 border-black rounded-t-2xl p-3 md:p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <button class="md:hidden p-1 hover:bg-slate-100 rounded">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+      <div class="font-bold text-lg md:text-xl">Admin Panel</div>
+    </div>
+    
+    <div class="h-9 w-9 md:h-10 md:w-10 rounded-full overflow-hidden border-2 border-slate-200 shadow-sm">
+      <img src="https://avatars.githubusercontent.com/u/246086494?v=4" alt="Admin Profile" class="h-full w-full object-cover" />
+    </div>
+  </header>
+
+  <main class="flex bg-white overflow-hidden border-x-2 border-black">
+    
+    <aside class="w-16 md:w-64 bg-slate-100 border-r-2 border-slate-200 p-2 md:p-4 transition-all">
+      <ul class="space-y-2 md:space-y-4">
+        <li class="p-2 bg-blue-500 text-white rounded flex items-center justify-center md:justify-start gap-3">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+          <span class="hidden md:block">Dashboard</span>
+        </li>
+        <li class="p-2 hover:bg-slate-200 rounded cursor-pointer flex items-center justify-center md:justify-start gap-3">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          <span class="hidden md:block text-slate-700">Users</span>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="flex-1 p-4 md:p-6 overflow-y-auto bg-slate-50">
+      <h2 class="text-xl md:text-2xl font-bold mb-4 text-slate-800">Welcome back!</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="h-28 md:h-32 bg-white border-2 border-green-500 rounded-xl p-4 shadow-sm">
+          <p class="text-xs text-green-600 font-bold uppercase">Revenue</p>
+          <p class="text-2xl font-bold">₱12,000</p>
+        </div>
+        <div class="h-28 md:h-32 bg-white border-2 border-blue-500 rounded-xl p-4 shadow-sm">
+          <p class="text-xs text-blue-600 font-bold uppercase">Users</p>
+          <p class="text-2xl font-bold">1,240</p>
+        </div>
+        <div class="h-28 md:h-32 bg-white border-2 border-purple-500 rounded-xl p-4 shadow-sm">
+          <p class="text-xs text-purple-600 font-bold uppercase">Growth</p>
+          <p class="text-2xl font-bold">+15%</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t-2 border-black rounded-b-2xl p-4 text-center text-xs md:text-sm text-gray-500">
+    © 2026 My Dashboard Project
+  </footer>
 </body>
+
 </html>
